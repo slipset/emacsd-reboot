@@ -83,6 +83,9 @@
 (global-set-key (kbd "M-v") 'scroll-down-command)
 (global-set-key (kbd "C-h") 'help-command)
 (global-set-key (kbd "M-s") 'paredit-splice-sexp)
+(global-set-key (kbd "C-x C-g") 'magit)
+(define-key global-map (kbd "RET") 'newline-and-indent)
+
 (line-number-mode t)
 (global-display-line-numbers-mode 1)
 (global-hl-line-mode nil)
