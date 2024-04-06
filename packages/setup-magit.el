@@ -14,7 +14,7 @@
                       unstage-all-changes))
 
   :bind (("C-x m" . magit-status)
-         ("C-c p" . magit-toggle-pair-programming-mode)
+;         ("C-c p" . magit-toggle-pair-programming-mode)
          (:map magit-status-mode-map
                ("q" . magit-quit)))
 

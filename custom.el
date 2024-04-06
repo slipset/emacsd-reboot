@@ -4,11 +4,14 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("05692bda554c178fafe15cc3e6ab09539e7db4846eb9bb6272b97068c055a903" default))
+   '("4eb9462a8fff9153bfe88a9ef53aa043aec8b79c5298d2873e887e0c3a8b03de" "05692bda554c178fafe15cc3e6ab09539e7db4846eb9bb6272b97068c055a903" default))
  '(package-selected-packages
    '(diff-hl exec-path-from-shell whitespace-cleanup-mode clj-refactor kaocha-runner marginalia which-key cider diminish move-text undo-fu-session vundo undo-fu consult-flycheck orderless consult flycheck datomic-snippets yasnippet projectile wgrep-deadgrep wgrep deadgrep vertico-directory vertico lsp-mode clojure-mode s multiple-cursors expand-region paredit magit))
  '(safe-local-variable-values
-   '((cider-clojure-cli-aliases . "-A:dev")
+   '((cider-ns-refresh-before-fn . "user/stop")
+     (cider-compilation-regexp quote
+                               ("Syntax error .*?compiling .*?at (\\(.*?\\):\\([[:digit:]]+\\):\\([[:digit:]]+\\))" 1 2 3))
+     (cider-clojure-cli-aliases . "-A:dev")
      (cider-figwheel-main-default-options . ":ui")
      (cider-preferred-build-tool . clojure-cli)
      (cider-default-cljs-repl . figwheel-main)
